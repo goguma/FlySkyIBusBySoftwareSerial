@@ -3,11 +3,11 @@
  */
 
 #include <Arduino.h>
-#include "FlySkyIBus.h"
+#include "FlySkyIBusBySoftwareSerial.h"
 
 FlySkyIBus IBus;
 
-void FlySkyIBus::begin(mySoftwareSerial& serial)
+void FlySkyIBus::begin(SoftwareSerial& serial)
 {
   serial.begin(115200);
   begin((Stream&)serial);

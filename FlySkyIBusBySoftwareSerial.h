@@ -4,13 +4,13 @@
 
 #include <inttypes.h>
 
-class mySoftwareSerial;
+class SoftwareSerial;
 class Stream;
 
 class FlySkyIBus
 {
 public:
-  void begin(mySoftwareSerial& serial);
+  void begin(SoftwareSerial& serial);
   void begin(Stream& stream);
   void loop(void);
   uint16_t readChannel(uint8_t channelNr);

@@ -19,7 +19,7 @@
  */
 
 #include <SoftwareSerial.h>
-#include "FlySkyIBus.h"
+#include "FlySkyIBusBySoftwareSerial.h"
 
 SoftwareSerial mySerial(10, 11); // RX, TX
 
